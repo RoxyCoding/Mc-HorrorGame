@@ -6,6 +6,7 @@
 	"environment": "client",
 	"entrypoints": {
 		"fabric-client-gametest": [
+			"chihalu.horror.test.MarchingTerrainClientTest",
 			"chihalu.horror.test.HorrorVisualClientTest"
 		]
 	},

@@ -1,5 +1,6 @@
 package chihalu.horror.client.surface;
 
+import chihalu.horror.client.terrain.MarchingTerrain;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Predicate;
@@ -35,9 +36,10 @@ final class ContinuousSurfaceModel implements BlockStateModel {
     @Override
     public void emitQuads(QuadEmitter emitter, BlockAndTintGetter level, BlockPos pos, BlockState state,
                           RandomSource random, Predicate<Direction> cullTest) {
-        // Item displays, falling-block previews, etc. must keep their standalone geometry.
-        if (!SurfaceRendering.enabled || level == BlockAndTintGetter.EMPTY || level.getBlockState(pos) != state
-                || !SurfaceMaterials.isOrganic(state)) {
+        // Item displays, falling-block previews, etc. must keep their standalone geometry. With the
+        // marching cubes terrain on, other blocks keep exact cube faces where they meet its surface.
+        if (!SurfaceRendering.enabled || MarchingTerrain.replacesBlocks() || level == BlockAndTintGetter.EMPTY
+                || level.getBlockState(pos) != state || !SurfaceMaterials.isOrganic(state)) {
             original.emitQuads(emitter, level, pos, state, random, cullTest);
             return;
         }

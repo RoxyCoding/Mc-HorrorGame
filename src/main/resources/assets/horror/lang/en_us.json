@@ -12,5 +12,12 @@
   "message.horror.surface_on": "Horror visuals: on",
   "message.horror.surface_off": "Horror visuals: off (vanilla rendering)",
   "pack.horror.visuals": "Horror Visuals",
-  "pack.horror.visuals.description": "Terrain shape, materials, fog and colour grading"
+  "pack.horror.visuals.description": "Terrain shape, materials, fog and colour grading",
+  "key.horror.terrain": "Cycle terrain view (vanilla / marching cubes / wireframe)",
+  "key.category.horror.terrain": "Horror: Terrain",
+  "message.horror.terrain": "Terrain: %s",
+  "message.horror.terrain.no_wireframe": "Terrain: %s (this GPU cannot draw wireframes)",
+  "message.horror.terrain.vanilla": "vanilla blocks",
+  "message.horror.terrain.marching_cubes": "marching cubes",
+  "message.horror.terrain.wireframe": "marching cubes wireframe"
 }
