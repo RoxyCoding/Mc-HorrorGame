@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "horror:block/floor",
+        "y": 0
+      },
+      {
+        "model": "horror:block/floor",
+        "y": 90
+      },
+      {
+        "model": "horror:block/floor",
+        "y": 180
+      },
+      {
+        "model": "horror:block/floor",
+        "y": 270
+      }
+    ]
+  }
+}

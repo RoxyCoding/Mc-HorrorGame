@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "horror:block/concrete",
+        "y": 0
+      },
+      {
+        "model": "horror:block/concrete",
+        "y": 90
+      },
+      {
+        "model": "horror:block/concrete",
+        "y": 180
+      },
+      {
+        "model": "horror:block/concrete",
+        "y": 270
+      }
+    ]
+  }
+}

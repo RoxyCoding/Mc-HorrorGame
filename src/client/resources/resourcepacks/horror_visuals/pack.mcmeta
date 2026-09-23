@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "description": {
+      "translate": "pack.horror.visuals.description"
+    },
+    "min_format": 97,
+    "max_format": 97
+  }
+}

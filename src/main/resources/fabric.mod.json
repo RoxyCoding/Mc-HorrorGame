@@ -3,7 +3,7 @@
 	"id": "horror",
 	"version": "${version}",
 	"name": "Horror",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A realistic horror interior prototype with concrete surfaces, detailed fixtures and a playable corridor demo.",
 	"authors": [
 		"Me!"
 	],

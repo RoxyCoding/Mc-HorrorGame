@@ -1,0 +1,16 @@
+{
+  "block.horror.concrete": "コンクリート壁",
+  "block.horror.floor": "コンクリート床",
+  "block.horror.pipe": "配管（Z方向）",
+  "block.horror.skirting": "巾木（西側の壁用）",
+  "block.horror.ceiling_light": "天井照明",
+  "block.horror.service_door": "管理用ドア",
+  "block.horror.flashlight_glow": "懐中電灯の光",
+  "item.horror.flashlight": "懐中電灯",
+  "key.horror.surface": "ホラー描画の切り替え",
+  "key.category.horror.visuals": "Horror：描画",
+  "message.horror.surface_on": "ホラー描画：オン",
+  "message.horror.surface_off": "ホラー描画：オフ（標準の描画）",
+  "pack.horror.visuals": "ホラー描画",
+  "pack.horror.visuals.description": "地形の形状・素材・霧・色調"
+}

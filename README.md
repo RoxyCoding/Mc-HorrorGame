@@ -1,9 +1,22 @@
-# Horror
+# Mc-HorrorGame
 
-## Setup
+Minecraft 26.3 / Fabric 向けのホラーゲームMod。通常ワールド全体のMinecraftらしさを減らすクライアント描画を実装しています。自然地形と木の角を丸め、素材の繰り返し模様を崩し、霞・曇天・色調処理をかけます。テクスチャはバニラと同じくっきりした表示です。コマンドを実行せず、ワールドに入ると適用されます。影や光源の陰影は別の影MODで扱う前提で、このModでは変更しません。
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+F8でホラー描画と標準の描画を切り替えて比較できます（キー設定から変更可能）。リソースパック画面の「ホラー描画」を外しても無効にできます。当たり判定は標準の立方体のままです。対象と制限は [通常ワールドの描画](docs/WORLD_RENDERING.md) を参照してください。
 
-## License
+## 開発環境で試す
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Java 25が必要です。
+
+```sh
+bash gradlew build
+bash gradlew runClient
+```
+
+通常のワールドで描画の変更を確認できます。`bash gradlew runClientGameTest` を実行すると、テスト用のワールドで描画のオン/オフを自動撮影します。開発中のクライアントを起動したままビルドした場合は、ワールドを保存してクライアントを再起動すると最新コードが反映されます。
+
+内装だけを試す場合は、チートを有効にした試作用ワールドで、開けた場所から `/horror demo` を実行してください。ドアは右クリックで開閉し、`/horror return` で元の場所へ戻ります。
+
+戻り先はサーバー終了時に失われるため、終了前に戻ってください。生成した廊下はワールドに残ります。
+
+素材、制限事項、確認状況は [内装試作の説明](docs/INTERIOR_PROTOTYPE.md) を参照してください。

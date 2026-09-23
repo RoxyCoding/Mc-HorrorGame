@@ -1,0 +1,16 @@
+{
+  "block.horror.concrete": "Continuous concrete",
+  "block.horror.floor": "Concrete floor",
+  "block.horror.pipe": "Octagonal pipe (Z axis)",
+  "block.horror.skirting": "Skirting (west wall)",
+  "block.horror.ceiling_light": "Ceiling light",
+  "block.horror.service_door": "Service door",
+  "block.horror.flashlight_glow": "Flashlight glow",
+  "item.horror.flashlight": "Flashlight",
+  "key.horror.surface": "Toggle horror visuals",
+  "key.category.horror.visuals": "Horror: Visuals",
+  "message.horror.surface_on": "Horror visuals: on",
+  "message.horror.surface_off": "Horror visuals: off (vanilla rendering)",
+  "pack.horror.visuals": "Horror Visuals",
+  "pack.horror.visuals.description": "Terrain shape, materials, fog and colour grading"
+}

@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "minecraft:block/gray_concrete",
+    "surface": "minecraft:block/gray_concrete",
+    "diffuser": "minecraft:block/light_gray_concrete"
+  },
+  "elements": [
+    {
+      "from": [
+        4,
+        14.75,
+        0
+      ],
+      "to": [
+        12,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#surface"
+        },
+        "down": {
+          "texture": "#surface"
+        },
+        "north": {
+          "texture": "#surface"
+        },
+        "south": {
+          "texture": "#surface"
+        },
+        "east": {
+          "texture": "#surface"
+        },
+        "west": {
+          "texture": "#surface"
+        }
+      }
+    },
+    {
+      "from": [
+        4.75,
+        14,
+        0.5
+      ],
+      "to": [
+        11.25,
+        14.75,
+        15.5
+      ],
+      "faces": {
+        "up": {
+          "texture": "#diffuser"
+        },
+        "down": {
+          "texture": "#diffuser"
+        },
+        "north": {
+          "texture": "#diffuser"
+        },
+        "south": {
+          "texture": "#diffuser"
+        },
+        "east": {
+          "texture": "#diffuser"
+        },
+        "west": {
+          "texture": "#diffuser"
+        }
+      }
+    }
+  ]
+}

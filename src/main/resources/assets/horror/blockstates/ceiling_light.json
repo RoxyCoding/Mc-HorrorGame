@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "horror:block/ceiling_light"
+    },
+    "lit=false": {
+      "model": "horror:block/ceiling_light_off"
+    }
+  }
+}

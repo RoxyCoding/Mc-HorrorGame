@@ -21,7 +21,10 @@ public class Horror implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		HorrorBlocks.initialize();
+		Flashlight.register();
+		CorridorDemo.register();
+		LOGGER.info("Horror interior prototype initialized");
 	}
 
 	public static Identifier id(String path) {

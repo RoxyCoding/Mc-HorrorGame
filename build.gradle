@@ -26,6 +26,14 @@ fabricApi {
 	configureDataGeneration {
 		client = true
 	}
+	// Screenshot scenes for the world renderer; opens a game window, so run it explicitly.
+	configureTests {
+		createSourceSet = true
+		modId = "horror-visual-test"
+		enableGameTests = false
+		enableClientGameTests = true
+		eula = false
+	}
 }
 
 dependencies {
@@ -59,6 +67,21 @@ java {
 	sourceCompatibility = JavaVersion.VERSION_25
 	targetCompatibility = JavaVersion.VERSION_25
 }
+
+// Run the mesh mathematics without launching a client or downloading a test framework.
+def surfaceTestClasses = layout.buildDirectory.dir('classes/surfaceTest')
+tasks.register('compileSurfaceTests', JavaCompile) {
+	source = files('src/client/java/chihalu/horror/client/surface/SurfaceCorners.java',
+		'src/surfaceTest/java/chihalu/horror/client/surface/SurfaceCornersTest.java')
+	classpath = files()
+	destinationDirectory = surfaceTestClasses
+}
+tasks.register('surfaceTest', JavaExec) {
+	dependsOn 'compileSurfaceTests'
+	classpath = files(surfaceTestClasses)
+	mainClass = 'chihalu.horror.client.surface.SurfaceCornersTest'
+}
+tasks.named('check') { dependsOn 'surfaceTest' }
 
 jar {
 	def projectName = project.name
