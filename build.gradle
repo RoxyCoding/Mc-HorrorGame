@@ -83,6 +83,23 @@ tasks.register('surfaceTest', JavaExec) {
 }
 tasks.named('check') { dependsOn 'surfaceTest' }
 
+// Marching cubes terrain: density field, tables and mesher are plain Java as well.
+def terrainTestClasses = layout.buildDirectory.dir('classes/terrainTest')
+tasks.register('compileTerrainTests', JavaCompile) {
+	def core = 'src/client/java/chihalu/horror/client/terrain/'
+	source = files(core + 'TerrainType.java', core + 'VoxelGrid.java', core + 'DensityField.java',
+		core + 'MarchingCubesTables.java', core + 'MarchingCubes.java', core + 'TerrainMesh.java',
+		'src/terrainTest/java/chihalu/horror/client/terrain/MarchingCubesTest.java')
+	classpath = files()
+	destinationDirectory = terrainTestClasses
+}
+tasks.register('terrainTest', JavaExec) {
+	dependsOn 'compileTerrainTests'
+	classpath = files(terrainTestClasses)
+	mainClass = 'chihalu.horror.client.terrain.MarchingCubesTest'
+}
+tasks.named('check') { dependsOn 'terrainTest' }
+
 jar {
 	def projectName = project.name
 	inputs.property "projectName", projectName

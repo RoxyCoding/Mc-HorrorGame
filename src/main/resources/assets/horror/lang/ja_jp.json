@@ -12,5 +12,12 @@
   "message.horror.surface_on": "ホラー描画：オン",
   "message.horror.surface_off": "ホラー描画：オフ（標準の描画）",
   "pack.horror.visuals": "ホラー描画",
-  "pack.horror.visuals.description": "地形の形状・素材・霧・色調"
+  "pack.horror.visuals.description": "地形の形状・素材・霧・色調",
+  "key.horror.terrain": "地形表示の切り替え（標準／Marching Cubes／ワイヤーフレーム）",
+  "key.category.horror.terrain": "Horror：地形",
+  "message.horror.terrain": "地形：%s",
+  "message.horror.terrain.no_wireframe": "地形：%s（このGPUはワイヤーフレーム表示に未対応）",
+  "message.horror.terrain.vanilla": "標準のブロック",
+  "message.horror.terrain.marching_cubes": "Marching Cubes",
+  "message.horror.terrain.wireframe": "Marching Cubes（ワイヤーフレーム）"
 }
